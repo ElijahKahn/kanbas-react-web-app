@@ -1,216 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Grades</title>
-  </head>
-  <body>
-    <table width="100%">
-      <tr valign="baseline">
-        <td style="width: 10%">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanbas</title>
+  <link href="../index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-flex">
+    <div class="row-2" valign="baseline">
+      <div class="col-2" id="sidebar">
+        <nav class="kanbas-nav">
+          <a href="#"><img id="NULogo" src="../../images/NU_RGB_Notched-N_wordmark_RW.png" alt="" /></a>
           <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../courses.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
+            <li class="nav-item" tabindex="1" id="account">
+              <a href="#acc-nav">
+                <i class="fas fa-user"></i> <br />
+                Account
+              </a>
+            </li>
+            <li class="nav-item" tabindex="2">
+              <a href="../dashboard.html">
+                <i class="fas fa-tachometer-alt"></i> <br />
+                Dashboard</a>
+            </li>
+            <li class="nav-item active" tabindex="3">
+              <a href="#course-nav">
+                <i class="fas fa-book"></i> <br />
+                Courses</a>
+            </li>
+            <li class="nav-item" tabindex="4">
+              <a href="#">
+                <i class="fas fa-calendar-alt"></i> <br />
+                Calendar</a>
+            </li>
+            <li class="nav-item" tabindex="5">
+              <a href="#">
+                <i class="fas fa-inbox"></i> <br />
+                Inbox</a>
+            </li>
+            <li class="nav-item" tabindex="6">
+              <a href="#">
+                <i class="far fa-clock"></i> <br />
+                History</a>
+            </li>
+            <li class="nav-item" tabindex="7">
+              <a href="#">
+                <i class="fas fa-tv"></i> <br />
+                Studio</a>
+            </li>
+            <li class="nav-item" tabindex="8">
+              <a href="#">
+                <i class="fas fa-sign-out-alt"></i> <br />
+                Commons</a>
+            </li>
+            <li class="nav-item" tabindex="9">
+              <a href="#">
+                <i class="far fa-question-circle"></i> <br />
+                Help</a>
+            </li>
           </ul>
-        </td>
+        </nav>
+      </div>
+      <div class="col" id="course">
+        <a href="#course-nav"><i class="fas fa-bars"></i></a>
+        <p>CS4550.12631.202410</p>
+        <hr>
+      </div>
 
-        <td style="width: 20">
-          <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="index.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="../grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcments</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </td>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <nav class="side-nav" id="acc-nav">
+            <p>202410_1 Fall 2023 Sem...</p>
+            <ul>
+              <li class="nav-item"><a href="#">Notifications</a></li>
+              <li class="nav-item"><a href="../profile/index.html">Profile</a></li>
+              <li class="nav-item"><a href="#">Files</a></li>
+              <li class="nav-item"><a href="#">Settings</a></li>
+              <li class="nav-item"><a href="#">ePortfolios</a></li>
+              <li class="nav-item"><a href="#">Shared Content</a></li>
+              <li class="nav-item"><a href="#">The Hub</a></li>
+              <li class="nav-item"><a href="#">Qwickly Course Tools</a></li>
+              <li class="nav-item"><a href="#">Global Announcments</a></li>
+            </ul>
+          </nav>
+          <nav class="side-nav" id="course-nav">
+            <p>202410_1 Fall 2023 Sem...</p>
+            <ul>
+              <li class="nav-item"><a href="../home.html">Home</a></li>
+              <li class="nav-item"><a href="#">Modules</a></li>
+              <li class="nav-item"><a href="#">Piazza</a></li>
+              <li class="nav-item"><a href="#">Zoom Meetings</a></li>
+              <li class="nav-item"><a href="#"><span>Assignments</span></a></li>
+              <li class="nav-item"><a href="#">Quizzes</a></li>
+              <li class="nav-item"><a href="../grades.html">Grades</a></li>
+              <li class="nav-item"><a href="#">People</a></li>
+              <li class="nav-item"><a href="#">Panopto Video</a></li>
+              <li class="nav-item"><a href="#">Discussions <i class="fas fa-eye-slash" id="coursenav-icons"></i></a>
+              </li>
+              <li class="nav-item"><a href="#">Announcments <i class="fas fa-eye-slash" id="coursenav-icons"></i></a>
+              </li>
+              <li class="nav-item"><a href="#">Pages <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+              <li class="nav-item"><a href="#">Files <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+              <li class="nav-item"><a href="#">Rubrics <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+              <li class="nav-item"><a href="#">Outcomes <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+              <li class="nav-item"><a href="#">Collaborations <i class="fas fa-eye-slash" id="coursenav-icons"></i></a>
+              </li>
+              <li class="nav-item"><a href="#">Syllabus <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+              <li class="nav-item"><a href="#">Settings</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <div class="row" id="home-btns">
+            <div class="col">
+              <b>
+                <p id="assignmnet-pub"><i class="fas fa-check-circle"></i>Published</p>
+              </b>
+              <button class="btn btn-light"><i class="fas fa-ellipsis-v"></i></button>
+              <hr>
+            </div>
+          </div>
 
-        <td style="width: 70%">
-          <select id="select-one">
-            <option value="EDIT">Edit</option>
-            <option value="SPEED GRADER">Speed Grader</option>
-            <option value="DUPLICATE">Duplicate</option>
-            <option value="DELETE">Delete</option>
-            <option value="MOVE TO...">Move To...</option>
-            <option value="SEND TO...">Send To...</option>
-            <option value="COPY TO...">Copy To...</option>
-            <option value="SHARE TO COMMONS">Share to Commons</option>
-          </select>
+          <div class="col" id="profile-content">
+            <div class="mb-3 row">
+              <label for="name1" class="col col-form-label">
+                <p class="assign">Assignment Name</p>
+              </label>
+              <div class="mb-3 row">
+                <input type="text" class="form-control" id="name" value="A1 - ENV + HTML">
+              </div>
+            </div>
 
-          <hr/>
+            <div class="row">
+              <div class="mb-3 row">
+                <textarea class="form-control" id="textarea1" rows="5" cols="60"></textarea>
+              </div>
+            </div>
 
-          <h3>Assignment Name</h3>
+            <div class="col-5">
+              <div class="mb-3 row" id="assign-info">
+                <label for="points" class="col-sm-2 col-form-label">
+                  <p class="assign">Points</p>
+                </label>
+                <div class="mb-3 row">
+                  <input type="text" class="form-control" id="assign-info" value="100">
+                </div>
 
-          <input type="text" name="" id=""/>
+                <div class="mb-3 row">
+                  <label for="assignment-group" class="col col-form-label">
+                    <p class="assign">Assignmnet Group</p>
+                  </label>
+                  <div class="mb-3 row">
+                    <select name="" class="form-select">
+                      <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+                      <option value="QUIZES">QUIZES</option>
+                      <option value="EXAMS">EXAMS</option>
+                      <option value="PROJECT">PROJECT</option>
+                    </select>
+                  </div>
+                </div>
 
-          <br/><br/>
+                <div class="mb-3 row">
+                  <label for="assignment-group" class="col col-form-label">
+                    <p class="assign">Display Grade as</p>
+                  </label>
+                  <div class="mb-3 row">
+                    <select name="" class="form-select">
+                      <option value="PERCENTAGE">Percentage</option>
+                    </select>
+                  </div>
+                </div>
 
-          <textarea name="" id="" cols="20" rows="2">
-            This is the assignment description</textarea>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Do not count this assignmnet towards the final grade
+                  </label>
+                </div>
 
-          <br/><br/>
+                <br>
+                <br>
 
-          Points <br/>
-          <input type="numeric" name="" id="" />
+                <div class="mb-3 row">
+                  <label for="form-check-label" id="assign-info">Submission Type</label>
+                  <div class="card">
+                    <select id="select-type" class="form-select">
+                      <option value="ONLINE">Online</option>
+                    </select>
+                    <label for="form-check-labels"><b>Online Entry Options</b></label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Text Entry
+                      </label>
+                    </div>
 
-          <br/><br/>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Website URL
+                      </label>
+                    </div>
 
-          Assignment Group
-          <br />
-          <select id="select-group">
-            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-            <option value="QUIZES">QUIZES</option>
-            <option value="EXAMS">EXAMS</option>
-            <option value="PROJECT">PROJECT</option>
-          </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Media Recording
+                      </label>
+                    </div>
 
-          <br/><br/>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Student Annotation
+                      </label>
+                    </div>
 
-          Display Grade as
-          <br/>
-          <select id="select-grade">
-            <option value="PERCENTAGE">Percentage</option>
-          </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        File Uploads
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <br /><br/>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Notify users that this content has changed
+              </label>
+            </div>
 
-          Submission Type
-          <br />
-          <select id="select-type">
-            <option value="ONLINE">Online</option>
-          </select>
-
-          <br/><br/>
-
-          <label>Online Entry Options</label>
-
-          <br/>
-
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-textentry"
-            valid="TEXT ENTRY"/>
-          <label for="chkbox-textentry">Text Entry</label> <br/>
-
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-url"
-            valid="TEXT ENTRY"/>
-          <label for="chkbox-url">Website URL</label> <br/>
-
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-media"
-            valid="TEXT ENTRY"/>
-          <label for="chkbox-url">Media Recordings</label> <br />
-
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-student"
-            valid="TEXT ENTRY"/>
-          <label for="chkbox-student">Student Annotation</label> <br/>
-
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-file"
-            valid="TEXT ENTRY"
-          />
-          <label for="chkbox-file">File Uploads</label> <br />
-
-          <br>
-
-          Submission Attempts
-          <br/>
-          <select id="select-attempts">
-            <option value="UNLIMITED">Unlimited</option>
-          </select>
-
-          <br> <br>
-
-          Plagarism Reviews
-          <br/>
-          <select id="select-attempts">
-            <option value="NONE">None</option>
-          </select>
-
-          <br><br>
-
-          Group Assignments
-          <br>
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-textentry"
-            valid="GROUP ASSIGNMENT"/>
-          <label for="chkbox-textentry">This is a group assignment</label> <br/>
-
-          <br>
-
-          Peer Reviews
-          <br>
-          <input
-            type="checkbox"
-            name="check-entry"
-            id="chkbox-textentry"
-            valid="Peer Reviews"/>
-          <label for="chkbox-textentry">Require Peer Reviews</label> <br/>
-
-          <br>
-          Assign
-          <br>
-          Assign to
-          <br>
-          <input type="text" name="" id="" value="Everyone">
-
-          <br><br>
-
-          Due <br>
-          <input type="date">
-
-          <br><br>
-
-          Available from <br>
-          <input type="date">
-
-          <br><br>
-
-          Until <br>
-          <input type="date">
-
-          <br><br>
-
-          <a href="index.html"><button type="button">Cancel</button></a>
-
-          <a href="index.html"><button type="button">Save</button></a>
-
-
-          <br /><br/>
-        </td>
-      </tr>
-    </table>
-  </body>
+            <div class="mb-3 row" id="bottom-btns">
+              <div class="col">
+                <a href="index.html"><button class="btn btn-light">Cancel</button></a>
+                <a href="index.html"><button type="submit" class="btn btn-danger">Save Profile</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
 </html>
