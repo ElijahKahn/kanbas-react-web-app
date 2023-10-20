@@ -1,0 +1,236 @@
+#sidebar {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+  }
+  
+  #sidebar .kanbas-nav {
+    width: 85px;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto; /* Add vertical scrolling if needed */
+  }
+  
+  #NULogo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+  }
+  
+  #sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #sidebar .nav-item {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-bottom: 2px;
+    margin-left: 12px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center text horizontally */
+    padding: 5px 0;
+  }
+  
+  .nav-item a:focus {
+    background-color: white;
+    color: rgb(177, 5, 5);
+  }
+
+  #acc-nav .nav-item a:focus {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 3px;
+  }
+
+  #course-nav .nav-item a:focus {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 3px;
+  }
+
+  .nav-item span {
+    color: black;
+    /* border-left: 2px solid black;
+    padding-left: 3px; */
+  }
+
+  /* .nav-item a:hover {
+   text-decoration: none;
+   color: inherit;
+  } */
+
+  .nav-item i {
+    color: rgb(177, 5, 5);
+    font-size: x-large;
+    margin-right: 5px;
+  }
+  
+  .nav-item:first-child .fa-user {
+    color: white;
+  }
+
+  /* .nav-item:focus a {
+    color: red;
+  } */
+  
+/* Existing styles for the Kanbas Navigation sidebar */
+
+/* Style for Account Navigation sidebar */
+
+.side-nav {
+    display: none;
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    /* position: fixed; */
+    top: 90px;
+    left: 85px; /* Position it next to the Kanbas Navigation sidebar */
+    height: 100%;
+    overflow-y: auto; /* Add vertical scrolling if needed */
+    transition: 1.3s; /* Add smooth transition */
+    z-index: 1; /* Ensure it's on top of the Kanbas Navigation sidebar */
+    /* box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Style for Account Navigation sidebar links */
+.side-nav ul {
+    /* background-color: white; */
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav .nav-item {
+    display: flex;
+    align-items: left;
+    margin-bottom: 2px;
+    margin-left: 12px;
+}
+
+.side-nav .nav-item a {
+    text-decoration: none;
+    color: rgb(177, 5, 5);
+    font-size: 15px;
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: left; /* Center text horizontally */
+    padding: 5px 0;
+}
+
+.side-nav p {
+    text-align: left;
+}
+
+#acc-nav:target {
+    display: block;
+}
+
+#course-nav:target {
+    display: block;
+}
+
+
+.nav-item a span {
+    color: black;
+}
+
+#profile-info {
+    margin-right: 400px;
+    padding: 5px 20px 20px 20px;
+}
+
+#profile {
+    margin-top: 25px;
+    margin-left: 110px;
+}
+
+.fa-bars {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: x-large;
+    color: rgb(177, 5, 5);
+}
+
+.fa-user {
+    color: gray;
+    font-size: 115px;
+}
+
+#profile p {
+    display: inline-block;
+    font-size: large;
+}
+
+.row-2 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: block;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#row-2 {
+    margin-left: 55px;
+}
+
+#profile-content a{
+    color: rgb(177, 5, 5);
+    text-decoration: none;
+}
+
+
+#bottom-btns {
+    text-align: right;
+}
+
+#link-icons {
+    margin-top: 35px;
+}
+
+.fa-times {
+    color: rgb(177, 5, 5);
+}
+
+#pub-courses {
+    margin-left: 150px;
+}
+
+#row-3 {
+    margin-left: 80px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 270px;
+    margin: 15px;
+}
+
+.card-text {
+    font-size: x-small;
+    color: gray;
+}
+
+.card-sub {
+    color: gray;
+}
+
+.card-title {
+    color: rgb(72, 101, 187);
+    font-size: small;
+}
+
+.card img {
+    width: auto;
+    height: 150px;
+}

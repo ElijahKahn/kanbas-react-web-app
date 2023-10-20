@@ -1,163 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Kanbas</title>
-  </head>
-  <body>
-    <table width="100%">
-      <tr valign="baseline">
-        <td style="width: 10%">
-          <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../courses.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
-        
-        <td style="width: 20">
-            <ul>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="#">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="../grades.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcments</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </td>
+    <link href="../index.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
 
-        <td style="width: 75%">
-            <input type="text" name="" id="" placeholder="Search for Assignments">
-            <button type="button">Group</button>   
-            <button type="button">Assignment</button>   
-            <select id="select-one">
-                <option value="EDIT ASSIGNMENT DATES">Edit Assignment Dates</option>
-             </select>   
+<body>
+    <div class="container-flex">
+        <div class="row-2" valign="baseline">
+            <div class="col-2" id="sidebar">
+                <nav class="kanbas-nav">
+                    <a href="#"><img id="NULogo" src="../../images/NU_RGB_Notched-N_wordmark_RW.png" alt="" /></a>
+                    <ul>
+                        <li class="nav-item" tabindex="1" id="account">
+                            <a href="#acc-nav">
+                                <i class="fas fa-user"></i> <br />
+                                Account
+                            </a>
+                        </li>
+                        <li class="nav-item" tabindex="2">
+                            <a href="../dashboard.html">
+                                <i class="fas fa-tachometer-alt"></i> <br />
+                                Dashboard</a>
+                        </li>
+                        <li class="nav-item active" tabindex="3">
+                            <a href="#course-nav">
+                                <i class="fas fa-book"></i> <br />
+                                Courses</a>
+                        </li>
+                        <li class="nav-item non-active" tabindex="4">
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i> <br />
+                                Calendar</a>
+                        </li>
+                        <li class="nav-item" tabindex="5">
+                            <a href="#">
+                                <i class="fas fa-inbox"></i> <br />
+                                Inbox</a>
+                        </li>
+                        <li class="nav-item" tabindex="6">
+                            <a href="#">
+                                <i class="far fa-clock"></i> <br />
+                                History</a>
+                        </li>
+                        <li class="nav-item" tabindex="7">
+                            <a href="#">
+                                <i class="fas fa-tv"></i> <br />
+                                Studio</a>
+                        </li>
+                        <li class="nav-item" tabindex="8">
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i> <br />
+                                Commons</a>
+                        </li>
+                        <li class="nav-item" tabindex="9">
+                            <a href="#">
+                                <i class="far fa-question-circle"></i> <br />
+                                Help</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col" id="course">
+                <a href="#course-nav"><i class="fas fa-bars"></i></a>
+                <p>CS4550.12631.202410</p>
+                <button class="btn btn-light float-end"><i class="fas fa-glasses"></i> Student View</button>
+                <hr>
+            </div>
 
-             <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <nav class="side-nav" id="acc-nav">
+                        <p>202410_1 Fall 2023 Sem...</p>
+                        <ul>
+                            <li class="nav-item"><a href="#">Notifications</a></li>
+                            <li class="nav-item"><a href="../profile/index.html">Profile</a></li>
+                            <li class="nav-item"><a href="#">Files</a></li>
+                            <li class="nav-item"><a href="#">Settings</a></li>
+                            <li class="nav-item"><a href="#">ePortfolios</a></li>
+                            <li class="nav-item"><a href="#">Shared Content</a></li>
+                            <li class="nav-item"><a href="#">The Hub</a></li>
+                            <li class="nav-item"><a href="#">Qwickly Course Tools</a></li>
+                            <li class="nav-item"><a href="#">Global Announcments</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="side-nav" id="course-nav">
+                        <p>202410_1 Fall 2023 Sem...</p>
+                        <ul>
+                            <li class="nav-item"><a href="../home.html">Home</a></li>
+                            <li class="nav-item"><a href="#">Modules</a></li>
+                            <li class="nav-item"><a href="#">Piazza</a></li>
+                            <li class="nav-item"><a href="#">Zoom Meetings</a></li>
+                            <li class="nav-item"><a href="#"><span>Assignments</span></a></li>
+                            <li class="nav-item"><a href="#">Quizzes</a></li>
+                            <li class="nav-item"><a href="../grades.html">Grades</a></li>
+                            <li class="nav-item"><a href="#">People</a></li>
+                            <li class="nav-item"><a href="#">Panopto Video</a></li>
+                            <li class="nav-item"><a href="#">Discussions <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Announcments <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Pages <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Files <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Rubrics <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Outcomes <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Collaborations <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Syllabus <i class="fas fa-eye-slash" id="coursenav-icons"></i></a></li>
+                            <li class="nav-item"><a href="#">Settings</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <div class="row" id="home-btns">
+                        <div class="col">
+                           <input type="text" class="form-control w-25 float-start" placeholder="Search for Assignment">
+                            <button class="btn btn-light"> <i class="fas fa-plus"></i>Group</button>
+                            <button class="btn btn-danger"> <i class="fas fa-plus"></i>Assignment</button>
+                            <button class="btn btn-light"><i class="fas fa-ellipsis-v"></i></button>
+                            <hr>
+                        </div>
+                    </div>
 
-             <h3>ASSIGNMENT 40% of Total 
-                <select id="select-one">
-                    <option value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO...">Move To...</option>
-                    <option value="SEND TO...">Send To...</option>
-                    <option value="COPY TO...">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>   
-             </h3>
+                    <div class="row">
+                     <div class="col">
+                        <ul class="list-group">
+                           <li class="list-group-item list-group-item-secondary">
+                              <i class="fas fa-caret-down"></i>
+                              <b>ASSIGNMETS</b>
+                              <div class="float-end">
+                                 <p class="rounded">40% of Total</p>
+                                 <i class="fas fa-plus"></i>
+                                 <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                              </div>
+                              <li class="list-group-item">
+                                 <i class="far fa-file-alt"></i> A1 - ENV + HTML
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                 <i class="far fa-file-alt"></i> A2 - CSS + Bootstrap
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                 <i class="far fa-file-alt"></i> A3 - JS + React
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                 <i class="far fa-file-alt"></i> A4 - STATE + REDUX
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                 <i class="far fa-file-alt"></i> A5 - NODE + SESSION
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                <i class="far fa-file-alt"></i>A6 - MONDO + MONGOOSE
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                           </li>
+                        </ul>
 
-             <ul>
-                <li><a href="edit.html">A1 - ENV + HTML</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
+                        <ul class="list-group" id="assignment-group">
+                           <li class="list-group-item list-group-item-secondary">
+                              <i class="fas fa-caret-down"></i>
+                              <b>QUIZZES 10% of Total</b>
+                              <div class="float-end">
+                                 <p class="rounded">10% of Total</p>
+                                 <i class="fas fa-check-circle"></i>
+                                 <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                              </div>
+                              <li class="list-group-item">
+                                 <i class="fas fa-rocket"></i> Q1 - HTML
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                <i class="fas fa-rocket"></i> Q2 - CSS
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                <i class="fas fa-rocket"></i> Q3 - JS, ES6
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                <i class="fas fa-rocket"></i> Q4 - REACT
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                <i class="fas fa-rocket"></i> Q5 - MONGO
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                           </li>
+                        </ul>
+           
+                        <ul class="list-group">
+                           <li class="list-group-item list-group-item-secondary">
+                              <i class="fas fa-caret-down"></i>
+                              <b>EXAMS</b>
+                              <div class="float-end">
+                                 <p class="rounded">20% of Total</p>
+                                 <i class="fas fa-check-circle"></i>
+                                 <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                              </div>
+                              <li class="list-group-item">
+                                 <i class="fas fa-rocket"></i> Midterm
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                              <li class="list-group-item">
+                                 <i class="fas fa-rocket"></i> Final
+                                 <div class="float-end">
+                                    <i class="fas fa-check-circle"></i>
+                                    <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                                 </div>
+                              </li>
+                           </li>
+                        </ul>
+                     
+                        <ul class="list-group">
+                           <li class="list-group-item list-group-item-secondary">
+                              <i class="fas fa-caret-down"></i>
+                              <b>PROJECT</b>
+                              <div class="float-end">
+                                 <p class="rounded">50% of Total</p>
+                                 <i class="fas fa-check-circle"></i>
+                                 <a href="edit.html"><i class="fas fa-ellipsis-v"></i></a>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <li><a href="edit.html">A2 - CSS + Bootstrap</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
+</body>
 
-                <li><a href="edit.html">A3 - JS + React</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">A4 - STATE + REDUX</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">A5 - NODE + SESSION</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">A6 - MONDO + MONGOOSE</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-             </ul>
-
-             <h3>QUIZZES 10% of Total 
-                <select id="select-one">
-                    <option value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO...">Move To...</option>
-                    <option value="SEND TO...">Send To...</option>
-                    <option value="COPY TO...">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>   
-             </h3>
-
-             <ul>
-                <li><a href="edit.html">Q1 - HTML</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">Q2 - CSS</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">Q3 - JS, ES6</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">Q4 - NODE</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">Q5 - MONGO</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-             </ul>
-
-             <h3>EXAMS 20% of Total 
-                <select id="select-one">
-                    <option value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO...">Move To...</option>
-                    <option value="SEND TO...">Send To...</option>
-                    <option value="COPY TO...">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>   
-             </h3>
-
-             <ul>
-                <li><a href="edit.html">Midterm</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-                <li><a href="edit.html">Final</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-             </ul>
-
-             <h3>PROJECT 50% of Total 
-                <select id="select-one">
-                    <option value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO...">Move To...</option>
-                    <option value="SEND TO...">Send To...</option>
-                    <option value="COPY TO...">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>   
-             </h3>
-
-             <ul>
-                <li><a href="edit.html">Project</a></li>
-                <a href="#">Multiple Modules</a> | Not available yet
-
-             </ul>
-        </td>
-      </tr>
-    </table>
-  </body>
 </html>
