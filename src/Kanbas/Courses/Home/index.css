@@ -1,0 +1,161 @@
+#select-one-publish {
+    width: fit-content;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  #home-btns {
+    text-align: right;
+  }
+
+  #home-btns .col .btn {
+    margin-right: 5px;
+  }
+  
+#pub-btn {
+    color: white;
+    background-color: rgb(7, 162, 7);
+  }
+  
+  #pub-btn i {
+    color: white;
+  }
+  
+  #course-stat-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+  
+  }
+  
+  #course-stat-btn2 {
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: block;
+    border-color: lightgray;
+    text-align: left;
+  
+  }
+  
+  .num {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(177, 5, 5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  #to-do {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #to-do h5 {
+    font-size: medium;
+  }
+  
+  #to-do hr {
+    margin-top: 2px;
+  }
+  
+  #todo {
+    padding-left: 2px;
+  }
+  
+  #todo p {
+    font-size: x-small;
+    margin-bottom: 2px;
+  }
+  
+  
+  #todo p span a {
+    color: rgb(177, 5, 5);
+    padding-bottom: 2px;
+    font-size: small;
+    text-decoration: none;
+  }
+  
+  
+  .col-1 i {
+    margin: 0;
+  }
+  
+  #coursenav-icons {
+    font-size: small;
+    color: grey;
+  }
+  
+  #coming-up h5 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: medium;
+  }
+  
+  #coming-up p {
+    display: inline-block;
+    margin-bottom: 0px;
+    padding-left: 60px;
+    font-size: small;
+  }
+  
+  #coming-up p a {
+    color: rgb(177, 5, 5);
+    text-decoration: none;
+    padding-left: 5px;
+  }
+  
+  #coming-up hr {
+    margin-top: 2px;
+  }
+  
+  #lecture .row a {
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+  }
+  
+  #lecture .lec {
+    font-size: small;
+    color: rgb(177, 5, 5);
+  }
+  
+  #lecture .row i {
+    padding-right: 5px;
+  }
+  
+  #lecture .cs4550 {
+    display: flex;
+    margin-left: 18px;
+    font-size: smaller;
+  }
+  
+  #lecture .sep {
+    margin-left: 18px;
+    font-size: smaller;
+  }
+  
+  #lec-row {
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item .fa-file-alt {
+    color: green;
+    margin-right: 12px;
+  }
+  
+  .list-group-item .fa-rocket {
+    color: green;
+    margin-right: 12px;
+  }
+  
+  .list-group-item a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .list-group {
+    padding-bottom: 30px;
+  }

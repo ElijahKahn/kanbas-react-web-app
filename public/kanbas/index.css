@@ -1,0 +1,472 @@
+#sidebar {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+}
+
+.active {
+  background-color: white;
+}
+
+.nav-item .active a {
+  color: rgb(177, 5, 5);
+}
+
+.active .fa-user {
+  color: gray;
+}
+
+#sidebar .kanbas-nav {
+  width: 85px;
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  /* Add vertical scrolling if needed */
+}
+
+#NULogo {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  flex: 1;
+  /* Allow the text to take up remaining space */
+  text-align: center;
+  /* Center text horizontally */
+  padding: 5px 0;
+}
+
+.nav-item a:focus {
+  background-color: white;
+  color: rgb(177, 5, 5);
+}
+
+#acc-nav .nav-item a:focus {
+  color: black;
+  border-left: 2px solid black;
+  padding-left: 3px;
+}
+
+#course-nav .nav-item a:focus {
+  color: black;
+  border-left: 2px solid black;
+  padding-left: 3px;
+}
+
+.nav-item span {
+  color: black;
+  border-left: 2px solid black;
+  /* padding-left: 3px; */
+  padding: 5px;
+}
+
+.nav-item i {
+  color: rgb(177, 5, 5);
+  font-size: x-large;
+  margin-right: 5px;
+}
+
+.nav-item:first-child .fa-user {
+  color: white;
+}
+
+/* .nav-item:focus a {
+  color: red;
+} */
+
+/* Existing styles for the Kanbas Navigation sidebar */
+
+/* Style for Account Navigation sidebar */
+
+.side-nav {
+  display: none;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  /* position: fixed; */
+  top: 90px;
+  left: 85px;
+  /* Position it next to the Kanbas Navigation sidebar */
+  height: 100%;
+  overflow-y: auto;
+  /* Add vertical scrolling if needed */
+  transition: 1.3s;
+  /* Add smooth transition */
+  z-index: 1;
+  /* Ensure it's on top of the Kanbas Navigation sidebar */
+  /* box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Style for Account Navigation sidebar links */
+.side-nav ul {
+  /* background-color: white; */
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav .nav-item {
+  display: flex;
+  align-items: left;
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+
+.side-nav .nav-item a {
+  text-decoration: none;
+  color: rgb(177, 5, 5);
+  font-size: 15px;
+  flex: 1;
+  /* Allow the text to take up remaining space */
+  text-align: left;
+  /* Center text horizontally */
+  padding: 5px 0;
+}
+
+.side-nav p {
+  text-align: left;
+}
+
+#acc-nav:target {
+  display: block;
+}
+
+#course-nav:target {
+  display: block;
+}
+
+
+.nav-item a span {
+  color: black;
+}
+
+#profile {
+  margin-top: 25px;
+  margin-left: 110px;
+}
+
+.fa-bars {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: x-large;
+  color: rgb(177, 5, 5);
+}
+
+.fa-user {
+  color: gray;
+  font-size: 115px;
+}
+
+#profile p {
+  display: inline-block;
+  font-size: large;
+}
+
+.row-2 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: block;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#row-2 {
+  margin-left: 55px;
+}
+
+#profile-content a {
+  color: rgb(177, 5, 5);
+  text-decoration: none;
+}
+
+
+#bottom-btns {
+  text-align: right;
+}
+
+.fa-arrow-right {
+  margin-top: 35px;
+  margin-left: 25px;
+}
+
+.fa-times {
+  margin-top: 35px;
+  color: rgb(177, 5, 5);
+}
+
+#pub-courses {
+  margin-left: 150px;
+}
+
+#row-3 {
+  margin-left: 80px;
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 270px;
+  margin: 15px;
+}
+
+.card-text {
+  font-size: x-small;
+  color: gray;
+}
+
+.card-sub {
+  color: gray;
+}
+
+.card-title {
+  color: rgb(72, 101, 187);
+  font-size: small;
+}
+
+.card img {
+  width: auto;
+  height: 150px;
+}
+
+#course {
+  margin-top: 25px;
+  margin-left: 110px;
+}
+
+#course p {
+  color: rgb(177, 5, 5);
+  display: inline-block;
+  font-size: large;
+}
+
+#select-one-publish {
+  width: fit-content;
+  display: inline-block;
+}
+
+#home-btns {
+  text-align: right;
+}
+
+.fa-check-circle {
+  color: green;
+  margin: 3px;
+}
+
+.fa-plus {
+  margin: 3px;
+}
+
+.fa-ellipsis-v {
+  margin: 3px;
+}
+
+.side-nav p {
+  font-size: x-small;
+  padding-left: 12px;
+}
+
+.list-group-item a #slides {
+  text-decoration: none;
+  color: rgb(177, 5, 5);
+}
+
+#pub-btn {
+  color: white;
+  background-color: rgb(7, 162, 7);
+}
+
+#pub-btn i {
+  color: white;
+}
+
+#course-stat-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+#course-stat-btn2 {
+  width: 250px;
+  margin-left: 10px;
+  margin-top: 5px;
+  display: block;
+  border-color: lightgray;
+  text-align: left;
+
+}
+
+.num {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(177, 5, 5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#to-do {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#to-do h5 {
+  font-size: medium;
+}
+
+#to-do hr {
+  margin-top: 2px;
+}
+
+#todo {
+  padding-left: 2px;
+}
+
+#todo p {
+  font-size: x-small;
+  margin-bottom: 2px;
+}
+
+
+#todo p span a {
+  color: rgb(177, 5, 5);
+  padding-bottom: 2px;
+  font-size: small;
+  text-decoration: none;
+}
+
+
+.col-1 i {
+  margin: 0;
+}
+
+#coursenav-icons {
+  font-size: small;
+  color: grey;
+}
+
+#coming-up h5 {
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: medium;
+}
+
+#coming-up p {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-left: 60px;
+  font-size: small;
+}
+
+#coming-up p a {
+  color: rgb(177, 5, 5);
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+#coming-up hr {
+  margin-top: 2px;
+}
+
+#lecture .row a {
+  text-decoration: none;
+  color: gray;
+  font-size: small;
+}
+
+#lecture .lec {
+  font-size: small;
+  color: rgb(177, 5, 5);
+}
+
+#lecture .row i {
+  padding-right: 5px;
+}
+
+#lecture .cs4550 {
+  display: flex;
+  margin-left: 18px;
+  font-size: smaller;
+}
+
+#lecture .sep {
+  margin-left: 18px;
+  font-size: smaller;
+}
+
+#lec-row {
+  margin-bottom: 10px;
+}
+
+.list-group-item .fa-file-alt {
+  color: green;
+  margin-right: 12px;
+}
+
+.list-group-item .fa-rocket {
+  color: green;
+  margin-right: 12px;
+}
+
+.list-group-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-group {
+  padding-bottom: 30px;
+}
+
+.rounded {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid gray;
+  border-radius: 75%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+}
+
+#assignmnet-pub {
+  display: inline-block;
+  color: green;
+  padding-right: 15px;
+}
+
+.assign {
+  margin-bottom: 2px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(177, 5, 5);
+  display: inline-block;
+}

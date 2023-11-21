@@ -1,0 +1,42 @@
+.wd-kanbas-navigation {
+  background: black;
+  border-radius: 0px !important;
+  border: none;
+}
+
+.wd-kanbas-navigation a {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+.wd-kanbas-navigation a.active {
+  background-color: white;
+  color: rgb(177, 5, 5);
+}
+
+.wd-kanbas-navigation .list-group-item {
+  padding: 7px 0px !important;
+  font-size: x-small;
+
+}
+
+#pub-courses {
+  margin-left: 10px;
+}
+
+#profile {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.fs-3 {
+  color: rgb(177, 5, 5);
+}
+
+.wd-kanbas-navigation .list-group {
+  width: 70px !important;
+  padding-bottom: 230px !important;
+}
+
