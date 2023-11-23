@@ -35,7 +35,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
 
       {courses.map((course) => (
       
-          <Link to={`/Kanbas/Courses/${course._id.$oid}`} className="card-deck-">
+          <Link to={`/Kanbas/Courses/${course._id}`} className="card-deck-">
             
            
            <div className="card" style={{ width: "18rem", margin: "10px", display: "inline-block"}}>

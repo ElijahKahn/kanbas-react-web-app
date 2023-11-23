@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import db from "../../Kanbas/Database";
 import { useParams, useLocation } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -13,9 +12,8 @@ import "./index.css";
 
 function Courses() {
   const { courseId } = useParams();
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-387f.onrender.com/api/courses";
   const [course, setCourse] = useState({});
-  
   const findCourseById = async (courseId) => {
     const response = await axios.get(
       `${URL}/${courseId}`
@@ -26,14 +24,14 @@ function Courses() {
   useEffect(() => {
     findCourseById(courseId);
   }, [courseId]);
-
-
+ 
   const location = useLocation();
   const [isNavOpen, setIsNavOpen] = useState(true);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
-  };
+   };
+
 
   return (
     <div className='container-flex'>

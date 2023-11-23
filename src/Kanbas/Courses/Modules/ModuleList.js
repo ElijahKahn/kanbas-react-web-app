@@ -19,16 +19,19 @@ import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  
+
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    findModulesForCourse(courseId)
+    client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
     );
   }, [courseId]);
 
-  const modules = useSelector((state) => state.modulesReducer.modules);
-  const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
 
   const handleAddModule = () => {
     createModule(courseId, module).then((module) => {
@@ -47,8 +50,6 @@ function ModuleList() {
     const status = await client.updateModule(module);
     dispatch(updateModule(module));
   };
-
-
 
   return (
 
@@ -71,7 +72,7 @@ function ModuleList() {
       </button>
 
       <button className="float-end btn btn-primary"
-        onClick={() => dispatch(updateModule(module))}>
+        onClick={handleUpdateModule}>
         Update
       </button>
     </li>
@@ -112,27 +113,3 @@ function ModuleList() {
   );
 }
 export default ModuleList;
-
-
-{/* <li className="list-group-item">
-<input
-value={module.name}
-onChange={(e) =>
-  dispatch(setModule({ ...module, name: e.target.value }))
-} />
-<textarea
-value={module.description}
-onChange={(e) =>
-  dispatch(setModule({ ...module, description: e.target.value }))
-} />
-
-<button className="float-end btn btn-success"
-onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
-Add
-</button>
-
-<button className="float-end btn btn-primary"
-onClick={() => dispatch(updateModule(module))}>
-Update
-</button>
-</li> */}

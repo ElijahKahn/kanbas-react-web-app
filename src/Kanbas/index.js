@@ -9,9 +9,8 @@ import axios from "axios";
 
 
 function Kanbas() {
-
   const [courses, setCourses] = useState([]);
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-387f.onrender.com/api/courses";
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
@@ -31,28 +30,28 @@ function Kanbas() {
     });
   };
 
-  const deleteCourse = async (course) => {
+  const deleteCourse = async (courseId) => {
+    console.log (courseId)
     const response = await axios.delete(
-      `${URL}/${course._id}`
+        `${URL}/${courseId}`
     );
-    setCourses(courses.filter(
-      (c) => c._id !== course._id));
+    setCourses(courses.filter((c) => c._id !== courseId));
   };
 
- const updateCourse = async (course) => {
+  const updateCourse = async() => {
     const response = await axios.put(
-      `${URL}/${course._id}`,
-      course
+        `${URL}/${course._id}`,
+        course
     );
     setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        }
-        return c;
-      })
+        courses.map((c) => {
+            if (c._id === course._id) {
+                return course;
+            } else {
+                return c;
+            }
+        })
     );
-    setCourse({ name: "" });
   };
 
   const findAllCourses = async () => {
