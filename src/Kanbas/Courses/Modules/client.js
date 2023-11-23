@@ -8,6 +8,8 @@ export const deleteModule = async (moduleId) => {
   return response.data;
 };
 
+// new
+
 export const createModule = async (courseId, module) => {
     const response = await axios.post(
       `${COURSES_URL}/${courseId}/modules`,
