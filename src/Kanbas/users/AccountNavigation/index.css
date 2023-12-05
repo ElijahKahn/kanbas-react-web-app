@@ -1,0 +1,24 @@
+.wd-account-navigation {
+    border-radius: 0px !important;
+    height: 100%;
+}
+
+.wd-account-navigation a {
+    background: white;
+    color: #c70000;
+    border-radius: 0px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 0px;
+}
+
+.wd-account-navigation a.list-group-item.active {
+    border-left: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.nav-button {
+    width: 50%;
+    text-align: center;
+}
