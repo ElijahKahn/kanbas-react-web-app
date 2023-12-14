@@ -15,6 +15,17 @@ function UserTable() {
         }
     };
 
+    const fetchUsers = async () => {
+        try {
+            const users = await client.findAllUsers();
+            setUsers(users);
+        } catch (err) {
+            console.error("Error fetching users:", err);
+            // Handle the error appropriately
+        }
+    };
+    useEffect(() => { fetchUsers(); }, []);
+
     const selectUser = async (user) => {
         try {
             const u = await client.findUserById(user._id);
@@ -41,13 +52,6 @@ function UserTable() {
         }
       };
     
-
-
-    const fetchUsers = async () => {
-        const users = await client.findAllUsers();
-        setUsers(users);
-    };
-    useEffect(() => { fetchUsers(); }, []);
     return (
         <div>
             <h1>User List</h1>
@@ -88,20 +92,20 @@ function UserTable() {
                 <tbody>
                     {users.map((user) => (
                         <tr key={user._id}>
-                            <td>{user.username}</td>
-                            <td>{user.firstName}</td>
-                            <td>{user.lastName}</td>
-                            <td className="text-nowrap">
+                        <td>{user.username}</td>
+                        <td>{user.firstName}</td>
+                        <td>{user.lastName}</td>
+                        <td className="text-nowrap">
                             <button className="btn btn-warning me-2">
                                 <BsPencil onClick={() => selectUser(user)} />
                             </button>
                         </td>
-                            <td>
+                        <td>
                             <button className="btn btn-danger me-2">
                                 <BsTrash3Fill onClick={() => deleteUser(user)} />
                             </button>
-                            </td>
-                        </tr>))}
+                        </td>
+                    </tr>))}
                 </tbody>
             </table>
         </div>

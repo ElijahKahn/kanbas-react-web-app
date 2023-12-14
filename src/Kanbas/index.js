@@ -76,7 +76,7 @@ function Kanbas() {
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="account" element={<Account />} />
+          <Route path="/Account" element={<Account />} />
           <Route path="Dashboard" element={ 
           <Dashboard
               courses={courses}
@@ -87,11 +87,10 @@ function Kanbas() {
               updateCourse={updateCourse}/>} />
           <Route path="Courses/:courseId/*" element={
             <Courses courses={courses} />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Signup" element={<Signup />} />
 
-          <Route path="/admin/users" element={<UserTable />} />
+          <Route path="/Admin/Users" element={<UserTable />} />
 
 
         </Routes>

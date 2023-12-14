@@ -10,7 +10,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
    {
   
   return (
-    <div className="col" id="profile">
+  <div className="col" id="profile">
       <h1>Dashboard</h1>
       <h5>Course</h5>
       <input value={course.name} className="form-control"

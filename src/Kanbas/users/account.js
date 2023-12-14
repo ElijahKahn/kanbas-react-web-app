@@ -6,6 +6,7 @@ import AccountNavigation from "./AccountNavigation";
 function Account() {
     const [account, setAccount] = useState(null);
     const navigate = useNavigate();
+    
     const fetchAccount = async () => {
         const account = await client.account();
         setAccount(account);
@@ -22,7 +23,7 @@ function Account() {
 
     const signout = async () => {
         await client.signout();
-        navigate("/kanbas/signin");
+        navigate("/Kanbas/Signin");
     };
 
 
@@ -80,7 +81,7 @@ function Account() {
                                 Save
                             </button>
                             
-                            <Link to="/kanbas/admin/users" className="btn btn-warning w-100">
+                            <Link to="/Kanbas/Admin/Users" className="btn btn-warning w-100">
                                 Users
                             </Link>
                             <button className="btn btn-danger w-100" onClick={signout}>

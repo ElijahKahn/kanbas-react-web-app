@@ -4,12 +4,18 @@ import { useNavigate } from "react-router-dom";
 import AccountNavigation from "./AccountNavigation";
 function Signin() {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
+    const [error, setError] = useState("");
+
     const navigate = useNavigate();
     const signin = async () => {
-        await client.signin(credentials);
-        navigate("/kanbas/account");
+        try {
+            await client.signin(credentials);
+            navigate("/Kanbas/Account");
+        } catch (err) {
+            console.log(err);
+            alert("Incorrect Information. Please try again!")
+        }
     };
-
     const [OpenNav, setOpen] = useState(true);
 
     const toggleNav = () => {

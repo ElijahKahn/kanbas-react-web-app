@@ -11,9 +11,13 @@ function Signup() {
     const signup = async () => {
         try {
             await client.signup(credentials);
-            navigate("/kanbas/account");
+            navigate("/Kanbas/Account");
         } catch (err) {
-            setError(err.response.data.message);
+            if (err.response && err.response.status === 400) {
+                alert(err.response.data.message); // Display the error message from server
+            } else {
+                alert("An error occurred during signup. Please try again later.");
+            }
         }
     };
 
